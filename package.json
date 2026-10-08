@@ -1,0 +1,1 @@
+{"name":"top-knotch-boxing","version":"1.0.0","private":true,"type":"module","scripts":{"build":"node scripts/build.mjs","test":"node --test","check":"node --check src/app.js && node --check api/store.js && node --check api/contact.js"},"engines":{"node":">=22"}}
