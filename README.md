@@ -73,3 +73,7 @@ The same build and commerce checks passed following the redesign. Page templates
 ## Structure-first review — October 9, 2026
 
 Campaign, boxing-detail, and sample product photography use lightweight labeled HTML/CSS placeholders. The approved logo remains in place. Existing generated assets are retained as unused options, with no new image generation required. The four-page structure, category menu, search, product options, sample bag, and Shopify adapter remain functional. Real Shopify product images will display when the live catalog is connected.
+
+## Existing imagery restored — October 9, 2026
+
+The homepage uses the existing ring image. Sample products use their original collection mockups throughout the grid, featured product, category navigation, product details, and bag. Live Shopify images take priority; live products without an image retain a neutral placeholder. Decorative boxing-detail slots remain placeholders. Syntax checks and the static build passed for this update.
