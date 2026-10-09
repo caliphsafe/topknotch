@@ -202,3 +202,25 @@
  .subpage-hero .subpage-topline{height:var(--hero-bar-height);min-height:var(--hero-bar-height);padding:0 5vw}
  .shop-page-hero>.subpage-topline{padding:0 5vw}
 }
+
+/* The Shop page has an older first-child rule above; keep its shared strip horizontal. */
+.shop-page-hero>.subpage-topline{
+ display:flex !important;
+ flex-direction:row !important;
+ justify-content:space-between !important;
+ align-items:center !important;
+ gap:24px !important;
+ width:100% !important;
+ height:var(--hero-bar-height) !important;
+ min-height:var(--hero-bar-height) !important;
+ margin:0 !important;
+ padding:0 3vw !important;
+ box-sizing:border-box !important;
+ position:absolute !important;
+ top:0 !important;
+ left:0 !important;
+ right:0 !important;
+}
+@media(max-width:760px){
+ .shop-page-hero>.subpage-topline{padding:0 5vw !important;gap:12px !important}
+}
