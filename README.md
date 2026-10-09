@@ -97,3 +97,11 @@ Added two new editorial boxing-gym hero images that share the homepage ring imag
 ## Shop hero imagery — October 9, 2026
 
 Added a dedicated Shop hero image featuring the sample apparel and boxing gloves in the same ringside gym setting. The Shop masthead now uses that image as an editorial product panel with a responsive mobile crop.
+
+
+## Uniform hero system — October 9, 2026
+
+Shop, About, and Contact now use the same red top strip, image-stage height, typography spacing, dark overlay, and responsive behavior as the homepage hero. Each page keeps its own dedicated boxing image.
+
+
+The previous Shop masthead split layout was replaced after review so it now follows the shared hero system exactly.

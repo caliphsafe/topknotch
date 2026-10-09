@@ -150,3 +150,37 @@
  .shop-masthead>div:first-child{padding:34px 0 26px}
  .shop-masthead .shop-hero-image{width:100%;height:240px;object-position:center 58%;order:2}
 }
+
+/* Shop hero now follows the same full-bleed editorial system as About and Contact. */
+.shop-page-hero{display:flex;flex-direction:column;justify-content:center;align-items:flex-start;min-height:520px;height:auto;padding:60px 6vw;background:#181614;color:var(--paper);border-bottom:3px solid var(--red)}
+.shop-page-hero>.subpage-shade{display:block;padding:0}
+.shop-page-hero .shop-hero-image{width:100%;height:100%;object-fit:cover;object-position:center 58%;align-self:auto;transform:none}
+.shop-page-hero .subpage-shade{background:linear-gradient(90deg,rgba(10,9,8,.84),rgba(10,9,8,.28) 82%),linear-gradient(0deg,rgba(10,9,8,.7),transparent 65%)}
+.shop-page-hero>.eyebrow{position:relative;color:#e5dfd5;max-width:650px}
+.shop-page-hero h1{position:relative;font-size:clamp(90px,10vw,160px);line-height:.88;max-width:100%;margin:26px 0;color:var(--paper)}
+.shop-page-hero h1 span{color:#f12432}
+.shop-page-hero>p:last-child{position:relative;color:#f1ede4;max-width:650px;font:25px/1.3 var(--serif)}
+@media(max-width:760px){
+ .shop-page-hero{min-height:460px;padding:38px 5vw}
+ .shop-page-hero .shop-hero-image{object-position:66% center}
+ .shop-page-hero .subpage-shade{background:linear-gradient(90deg,rgba(10,9,8,.78),rgba(10,9,8,.35)),linear-gradient(0deg,rgba(10,9,8,.76),transparent 75%)}
+ .shop-page-hero h1{font-size:clamp(64px,12vw,92px);margin:25px 0}
+ .shop-page-hero>.eyebrow{font-size:8px;line-height:1.7}
+ .shop-page-hero>p:last-child{font-size:21px;line-height:1.35}
+}
+
+
+/* Uniform hero system: every page uses the homepage red strip and image-stage height. */
+.subpage-hero{height:clamp(560px,49vw,770px);min-height:0;padding:92px 6vw 56px;display:flex;flex-direction:column;justify-content:center;align-items:flex-start}
+.subpage-hero .subpage-topline{position:absolute;top:0;left:0;right:0;z-index:4}
+.subpage-hero .subpage-ring{object-fit:cover;width:100%;height:100%;inset:0}
+.about-hero .subpage-ring{object-position:82% 56%}
+.contact-hero .subpage-ring{object-position:95% 75%;transform:scale(1.16);transform-origin:right bottom}
+.shop-page-hero .shop-hero-image{object-position:center 58%;transform:none}
+.about-hero,.contact-hero,.shop-page-hero{min-height:0}
+@media(max-width:760px){
+ .subpage-hero{height:580px;min-height:580px;padding:85px 5vw 38px}
+ .about-hero .subpage-ring{object-position:73% center}
+ .contact-hero .subpage-ring{object-position:95% 70%}
+ .shop-page-hero .shop-hero-image{object-position:66% center}
+}
