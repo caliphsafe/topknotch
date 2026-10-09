@@ -15,3 +15,7 @@
 
 /* Keep the ring corner in frame as the homepage image crops. */
 .campaign-photo>img{object-position:75% center}
+
+/* Shared editorial story and monochrome drawn interface icons. */
+.ui-arrow{display:inline-block;flex-shrink:0;vertical-align:middle}.story-actions{display:flex;flex-wrap:wrap;gap:12px 30px;margin-top:20px}.editorial-teaser{padding-top:40px;padding-bottom:40px}.editorial-teaser p:not(.eyebrow){font-size:15px;line-height:1.8;max-width:720px;margin:16px 0}.editorial-teaser .teaser-image{height:100%;min-height:260px}.editorial-teaser:hover h2{color:inherit}.article-body h2:not(:first-child){margin-top:44px}.article-body .story-actions .text-link{margin-top:0}
+@media(max-width:700px){.editorial-teaser p:not(.eyebrow){font-size:14px;max-width:none}.editorial-teaser .teaser-image{height:180px;min-height:0}.story-actions{gap:14px 24px}.article-intro h2{font-size:42px}}

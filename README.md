@@ -77,3 +77,7 @@ Campaign, boxing-detail, and sample product photography use lightweight labeled 
 ## Existing imagery restored — October 9, 2026
 
 The homepage uses the existing ring image. Sample products use their original collection mockups throughout the grid, featured product, category navigation, product details, and bag. Live Shopify images take priority; live products without an image retain a neutral placeholder. Decorative boxing-detail slots remain placeholders. Syntax checks and the static build passed for this update.
+
+## Training and family story — October 9, 2026
+
+Expanded the homepage and About story to represent David’s training company and apparel together, including his work with accomplished boxers and the family legacy behind AJM. Added training enquiries to Contact and updated page descriptions. Replaced emoji-capable directional characters with monochrome SVG icons across the shared mobile and desktop UI.
