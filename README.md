@@ -69,3 +69,7 @@ Browser-based layout / interaction testing and the first Vercel deployment remai
 Approved direction: product-first minimalist commerce, red boxing gloves, numbered image-led navigation and a quieter magazine-style brand story. `campaign.png` is illustrative model photography, not a portrait of David or Abdul. `gloves.png` is a decorative cutout, not a purchasable product. Category links derive from the active catalog and support direct `/shop?category=Tees` links; search supports `/shop?q=...`. The hero product switches to the live Shopify catalog with the rest of the shop.
 
 The same build and commerce checks passed following the redesign. Page templates and referenced assets were checked locally; browser-based visual testing remains unavailable in this environment.
+
+## Structure-first review — October 9, 2026
+
+Campaign, boxing-detail, and sample product photography use lightweight labeled HTML/CSS placeholders. The approved logo remains in place. Existing generated assets are retained as unused options, with no new image generation required. The four-page structure, category menu, search, product options, sample bag, and Shopify adapter remain functional. Real Shopify product images will display when the live catalog is connected.
