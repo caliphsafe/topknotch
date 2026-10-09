@@ -105,3 +105,8 @@ Shop, About, and Contact now use the same red top strip, image-stage height, typ
 
 
 The previous Shop masthead split layout was replaced after review so it now follows the shared hero system exactly.
+
+
+## Final shared hero sizing — October 9, 2026
+
+The red top strip now uses one fixed height and identical spacing on Home, Shop, About, and Contact. Every hero image stage uses the same shared height set to 70 percent of the original stage, with the same value on mobile.
