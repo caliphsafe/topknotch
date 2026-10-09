@@ -81,3 +81,9 @@ The homepage uses the existing ring image. Sample products use their original co
 ## Training and family story — October 9, 2026
 
 Expanded the homepage and About story to represent David’s training company and apparel together, including his work with accomplished boxers and the family legacy behind AJM. Added training enquiries to Contact and updated page descriptions. Replaced emoji-capable directional characters with monochrome SVG icons across the shared mobile and desktop UI.
+
+## Navigation and ring poster hero — October 9, 2026
+
+Desktop now has a persistent, numbered Home / Shop / About / Contact navigation bar. The mobile drawer uses the same four pages, without product cards or categories, and closes when resizing to desktop. The homepage hero uses the existing ring image as a full-width poster with oversized “In your corner” typography and separate apparel and training links. The collection and expanded family story follow below. Removed the old hero product renderer and decoupled page navigation from catalog loading.
+
+Validation: syntax checks, static build, all four rendered views, desktop/mobile active-page states, navigation destinations, image asset paths, and the no-emoji check passed. Browser-based visual QA remains unavailable in the managed environment.
