@@ -92,3 +92,8 @@ Validation: syntax checks, static build, all four rendered views, desktop/mobile
 ## Dedicated story and contact imagery — October 9, 2026
 
 Added two new editorial boxing-gym hero images that share the homepage ring image’s visual language. The About hero uses a wider training-room composition with gloves on the canvas; the Contact hero uses a close red-corner composition with wrapped gloves on the ropes. Both are responsive and use separate crops on mobile.
+
+
+## Shop hero imagery — October 9, 2026
+
+Added a dedicated Shop hero image featuring the sample apparel and boxing gloves in the same ringside gym setting. The Shop masthead now uses that image as an editorial product panel with a responsive mobile crop.
