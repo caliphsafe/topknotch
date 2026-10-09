@@ -1,6 +1,6 @@
 # Top Knotch Boxing
 
-A custom, mobile-first apparel storefront built around the Mahmoud family’s boxing legacy. This is the initial 43 Build for `caliphsafe/topknotch`.
+A custom, mobile-first apparel storefront for Top Knotch Boxing. The approved editorial redesign puts clothing and red-glove campaign imagery first, with a focused article about the Mahmoud family behind the mark.
 
 ## First Vercel deployment
 
@@ -14,9 +14,9 @@ Use Node.js 24. No environment variables or paid services are required for the i
 
 ## Pages and behavior
 
-- `/`: story-led homepage, ringside hero, restored logo, collection and brand principles.
+- `/`: product-first campaign, featured product, collection, “The cat on the chest” editorial link and category browse.
 - `/shop`: four concept products, category filters, search, sorting, product details, size choices and a persistent sample bag.
-- `/about`: Abdul Jaami Mahmoud’s Top Cat nickname, AJM tribute, David Mahmoud’s boxing career, and the father-to-son brand story.
+- `/about`: “The cat on the chest,” an editorial article about Abdul Jaami Mahmoud’s Top Cat nickname, the AJM tribute, and David Mahmoud.
 - `/contact`: inquiry form with honest delivery state. Before a contact endpoint is configured, the form copies a draft rather than claiming to send it.
 
 The concept products and prices are illustrative, clearly labeled, and cannot be purchased. No fight records, championships, quotes, endorsements, customer reviews, contact addresses or product performance claims have been invented.
@@ -45,7 +45,8 @@ Official reference: https://shopify.dev/docs/api/storefront/2026-07/mutations/ca
 
 ## Source map
 
-- `src/app.js`: page content, accessible native dialogs, catalog and bag interactions, contact form.
+- `src/app.js`: accessible native dialogs, category menu, search, catalog and bag interactions, contact form.
+- `src/views.js`: editorial page layouts, shared navigation and footer.
 - `src/style.css`: responsive brand styling and reduced-motion support.
 - `src/catalog.js`: sample product data and cart sanitization.
 - `src/template.html`: page shell and metadata.
@@ -62,3 +63,9 @@ The editorial gym image is illustrative, not presented as a photograph of the fa
 `npm run check`, `npm test`, and `npm run build` passed before the initial commit. Ten automated tests cover concept mode, checkout gating, live catalog pagination, variant mapping, API failures, checkout quantities, inventory warnings, honest contact states and malformed saved carts.
 
 Browser-based layout / interaction testing and the first Vercel deployment remain to be performed. The owner requested to handle the initial Vercel deployment.
+
+## Editorial redesign — October 8, 2026
+
+Approved direction: product-first minimalist commerce, red boxing gloves, numbered image-led navigation and a quieter magazine-style brand story. `campaign.png` is illustrative model photography, not a portrait of David or Abdul. `gloves.png` is a decorative cutout, not a purchasable product. Category links derive from the active catalog and support direct `/shop?category=Tees` links; search supports `/shop?q=...`. The hero product switches to the live Shopify catalog with the rest of the shop.
+
+The same build and commerce checks passed following the redesign. Page templates and referenced assets were checked locally; browser-based visual testing remains unavailable in this environment.
