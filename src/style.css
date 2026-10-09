@@ -112,3 +112,30 @@
  .hero-training{border-left:0;border-top:1px solid var(--line);padding:22px 5vw}
  .hero-training strong{font-size:25px}
 }
+
+/* Bring the homepage ring atmosphere into the story and contact introductions. */
+.editorial-article{max-width:none}
+.article-lead,.article-body{max-width:1500px;margin-inline:auto}
+.subpage-hero{position:relative;isolation:isolate;overflow:hidden;background:#181614;color:var(--paper);border-bottom:3px solid var(--red);padding:52px 6vw}
+.subpage-ring,.subpage-shade{position:absolute;inset:0;width:100%;height:100%;pointer-events:none}
+.subpage-ring{object-fit:cover;z-index:-2}
+.subpage-shade{z-index:-1;background:linear-gradient(90deg,rgba(10,9,8,.83),rgba(10,9,8,.28) 80%),linear-gradient(0deg,rgba(10,9,8,.65),transparent 65%)}
+.about-hero{min-height:590px;display:flex;flex-direction:column;justify-content:center}
+.about-hero .subpage-ring{object-position:82% 56%}
+.contact-hero{min-height:440px;display:flex;flex-direction:column;justify-content:center}
+.contact-hero .subpage-ring{object-position:95% 75%;transform:scale(1.16);transform-origin:right bottom}
+.subpage-hero h1{font-size:clamp(90px,10vw,160px);line-height:.88;max-width:100%;margin:26px 0}
+.subpage-hero h1 em{color:var(--paper)}
+.subpage-hero>.eyebrow{color:#e5dfd5;max-width:650px}
+.subpage-hero>p:last-child{color:#f1ede4;max-width:650px;line-height:1.3}
+@media(max-width:760px){
+ .subpage-hero{padding:38px 5vw}
+ .about-hero{min-height:490px}
+ .contact-hero{min-height:360px}
+ .about-hero .subpage-ring{object-position:73% center}
+ .contact-hero .subpage-ring{object-position:95% 70%}
+ .subpage-shade{background:linear-gradient(90deg,rgba(10,9,8,.76),rgba(10,9,8,.36)),linear-gradient(0deg,rgba(10,9,8,.7),transparent 75%)}
+ .subpage-hero h1{font-size:clamp(64px,12vw,92px);margin:25px 0}
+ .subpage-hero>.eyebrow{font-size:8px;line-height:1.7;max-width:300px}
+ .subpage-hero>p:last-child{font-size:21px;line-height:1.35}
+}

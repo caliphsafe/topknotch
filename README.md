@@ -87,3 +87,8 @@ Expanded the homepage and About story to represent David’s training company an
 Desktop now has a persistent, numbered Home / Shop / About / Contact navigation bar. The mobile drawer uses the same four pages, without product cards or categories, and closes when resizing to desktop. The homepage hero uses the existing ring image as a full-width poster with oversized “In your corner” typography and separate apparel and training links. The collection and expanded family story follow below. Removed the old hero product renderer and decoupled page navigation from catalog loading.
 
 Validation: syntax checks, static build, all four rendered views, desktop/mobile active-page states, navigation destinations, image asset paths, and the no-emoji check passed. Browser-based visual QA remains unavailable in the managed environment.
+
+
+## Dedicated story and contact imagery — October 9, 2026
+
+Added two new editorial boxing-gym hero images that share the homepage ring image’s visual language. The About hero uses a wider training-room composition with gloves on the canvas; the Contact hero uses a close red-corner composition with wrapped gloves on the ropes. Both are responsive and use separate crops on mobile.
