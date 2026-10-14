@@ -264,3 +264,7 @@
 .subpage-hero{gap:0}
 .subpage-hero>p:last-child{margin-top:0}
 .hero-content>*{flex-shrink:0}
+
+/* Reusable right-facing boxing glove replaces directional arrow icons. */
+.boxing-glove-icon{display:inline-block;width:30px;height:24px;max-width:none;object-fit:contain;flex:0 0 auto;vertical-align:middle}
+.hero-training>.boxing-glove-icon{width:36px;height:28px}
