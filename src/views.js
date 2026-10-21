@@ -1,4 +1,4 @@
-/ Editorial presentation, kept separate from catalog and checkout behavior.
+// Editorial presentation, kept separate from catalog and checkout behavior.
 export function createViews({link,page}) {
  const logo='<img src="/assets/logo.png" alt="Top Knotch Boxing" width="100" height="80">';
  const glove='<div class="hanging-gloves image-placeholder" aria-label="Boxing detail image placeholder"><span>BOXING DETAIL</span></div>';
