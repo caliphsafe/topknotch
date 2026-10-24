@@ -275,3 +275,40 @@
 .hero-kicker>span{display:block;border-left:1px solid #ffffff60;padding-left:12px;font-weight:600;font-size:9px;line-height:1.45}
 .hero-kicker small{display:block;margin-top:3px;font-size:7px;letter-spacing:.12em;font-weight:400;opacity:.92}
 @media(max-width:760px){.hero-kicker{display:flex;align-items:center;gap:9px;max-width:90%;font-size:7px}.hero-kicker .hero-mark{width:40px;height:37px}.hero-kicker>span{display:block;border:0;padding:0;font-size:8px;letter-spacing:.1em}.hero-kicker small{font-size:6px}}
+
+/* Homepage hero refresh: mute the ring image and give the emblem its own left-side space. */
+.ringside-hero .hero-ring{filter:brightness(.88) saturate(.72) contrast(.96)}
+.ringside-hero .hero-shade{background:linear-gradient(90deg,rgba(10,9,8,.83),rgba(10,9,8,.28) 80%),linear-gradient(0deg,rgba(10,9,8,.65),transparent 65%)}
+.hero-content.hero-home-layout{box-sizing:border-box;width:100%;height:100%;display:grid;grid-template-columns:minmax(190px,.78fr) minmax(0,1.22fr);align-items:center;justify-content:stretch;gap:clamp(24px,4vw,58px);padding:26px 6vw}
+.hero-home-layout .hero-brandmark{display:grid;place-items:center;align-self:center}
+.hero-home-layout .hero-mark{display:block;width:clamp(190px,22vw,310px);height:clamp(190px,22vw,310px);object-fit:contain;background:var(--paper);border-radius:50%;padding:7px;box-shadow:0 16px 50px rgba(0,0,0,.24)}
+.hero-home-copy{min-width:0;display:flex;flex-direction:column;align-items:flex-start;justify-content:center}
+.hero-home-copy .hero-kicker{display:block;margin:0;font-size:9px;line-height:1.45;letter-spacing:.15em;font-weight:600}
+.hero-home-copy .hero-kicker small{display:block;margin-top:4px;font-size:7px;letter-spacing:.13em;font-weight:400}
+.hero-home-copy h1{font-size:clamp(70px,8.7vw,132px);line-height:.82;margin:15px 0 20px}
+.hero-home-copy .hero-corner{margin-left:2vw}
+.hero-home-copy .hero-bottom{width:100%;gap:18px;padding-right:0}
+.hero-home-copy .hero-bottom>p{max-width:15ch;font-size:clamp(20px,2.2vw,31px);line-height:1.02}
+.hero-home-copy .hero-shop{min-width:205px;padding:15px 17px;gap:20px}
+
+@media(max-width:1100px) and (min-width:761px){
+ .hero-content.hero-home-layout{grid-template-columns:minmax(170px,.72fr) minmax(0,1.28fr);gap:clamp(18px,3vw,34px);padding:20px 5vw}
+ .hero-home-layout .hero-mark{width:clamp(180px,22vw,245px);height:clamp(180px,22vw,245px);padding:6px}
+ .hero-home-copy h1{font-size:clamp(62px,8.6vw,96px);margin:12px 0 16px}
+ .hero-home-copy .hero-bottom{gap:12px}
+ .hero-home-copy .hero-bottom>p{font-size:clamp(18px,2.4vw,25px)}
+ .hero-home-copy .hero-shop{min-width:180px;padding:13px 14px;gap:12px;font-size:10px}
+}
+@media(max-width:760px){
+ .ringside-hero .hero-ring{filter:brightness(.88) saturate(.72) contrast(.96)}
+ .ringside-hero .hero-shade{background:linear-gradient(90deg,rgba(10,9,8,.76),rgba(10,9,8,.36)),linear-gradient(0deg,rgba(10,9,8,.7),transparent 75%)}
+ .hero-content.hero-home-layout{box-sizing:border-box;width:100%;height:100%;min-height:var(--hero-stage-height);display:grid;grid-template-columns:minmax(90px,.72fr) minmax(0,1.28fr);align-items:center;gap:clamp(10px,3.5vw,18px);padding:16px 5vw}
+ .hero-home-layout .hero-mark{width:clamp(90px,30vw,128px);height:clamp(90px,30vw,128px);padding:4px}
+ .hero-home-copy .hero-kicker{font-size:7px;line-height:1.35;letter-spacing:.1em;margin:0}
+ .hero-home-copy .hero-kicker small{font-size:6px;letter-spacing:.09em;margin-top:3px}
+ .hero-home-copy h1{font-size:clamp(32px,9.5vw,44px);line-height:.88;margin:15px 0 17px}
+ .hero-home-copy .hero-corner{margin-left:0}
+ .hero-home-copy .hero-bottom{width:100%;display:flex;flex-direction:column;align-items:stretch;gap:12px;padding:0}
+ .hero-home-copy .hero-bottom>p{font-size:clamp(17px,4.8vw,21px);line-height:1.05}
+ .hero-home-copy .hero-shop{width:100%;min-width:0;min-height:48px;padding:13px 11px;gap:8px;font-size:8px}
+}
