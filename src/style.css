@@ -268,3 +268,10 @@
 /* Reusable right-facing boxing glove replaces directional arrow icons. */
 .boxing-glove-icon{display:inline-block;width:30px;height:24px;max-width:none;object-fit:contain;flex:0 0 auto;vertical-align:middle}
 .hero-training>.boxing-glove-icon{width:36px;height:28px}
+
+/* Keep the brand mark with the homepage hero kicker without consuming extra height. */
+.hero-kicker{display:flex;align-items:center;gap:12px;line-height:1.3}
+.hero-kicker .hero-mark{display:block;width:clamp(42px,4vw,56px);height:clamp(38px,3.8vw,52px);object-fit:contain;flex:0 0 auto;background:var(--paper);border-radius:50%;padding:2px}
+.hero-kicker>span{display:block;border-left:1px solid #ffffff60;padding-left:12px;font-weight:600;font-size:9px;line-height:1.45}
+.hero-kicker small{display:block;margin-top:3px;font-size:7px;letter-spacing:.12em;font-weight:400;opacity:.92}
+@media(max-width:760px){.hero-kicker{display:flex;align-items:center;gap:9px;max-width:90%;font-size:7px}.hero-kicker .hero-mark{width:40px;height:37px}.hero-kicker>span{display:block;border:0;padding:0;font-size:8px;letter-spacing:.1em}.hero-kicker small{font-size:6px}}
