@@ -332,3 +332,5 @@
 }
 
 @media(max-width:700px){.article-lead{grid-template-columns:1fr;gap:28px;padding:32px 4vw}.article-mark{min-height:360px;padding:28px 16px 48px}.article-mark-logo{width:min(92%,360px)}.article-intro h2{font-size:clamp(38px,11vw,50px)}.category-spread{grid-template-columns:1fr}.glove-study{aspect-ratio:4/3;min-height:0}.glove-study>img{max-width:none;width:100%;height:100%;object-fit:cover;object-position:center 45%;transform:none}.glove-study .eyebrow{left:18px;bottom:16px}}
+
+.glove-study>img{filter:brightness(.78) saturate(.78)}
