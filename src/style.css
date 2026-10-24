@@ -316,7 +316,3 @@
 /* Let the enlarged emblem sit directly over the dark hero image. */
 .hero-home-layout .hero-mark{background:transparent;border-radius:0;padding:0;box-shadow:none;filter:drop-shadow(0 12px 18px rgba(0,0,0,.42))}
 
-/* Keep both contact headline lines in the same heading style. */
-.contact-copy h2.contact-headline{margin:20px 0}
-.contact-copy h2.contact-headline span{display:block}
-.contact-copy h2.contact-headline span+span{margin-top:4px}
