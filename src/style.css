@@ -316,3 +316,17 @@
 /* Let the enlarged emblem sit directly over the dark hero image. */
 .hero-home-layout .hero-mark{background:transparent;border-radius:0;padding:0;box-shadow:none;filter:drop-shadow(0 12px 18px rgba(0,0,0,.42))}
 
+/* Tighten the homepage mark-and-copy lockup for a more focused first impression. */
+@media(min-width:761px){
+ .hero-content.hero-home-layout{grid-template-columns:clamp(200px,20vw,286px) minmax(0,1fr);gap:clamp(20px,2.2vw,36px);padding:26px 6vw}
+ .hero-home-layout .hero-brandmark{justify-items:end}
+ .hero-home-layout .hero-mark{width:clamp(200px,20vw,286px);height:clamp(200px,20vw,286px)}
+ .hero-home-copy .hero-bottom>p{max-width:none}
+}
+@media(min-width:761px) and (max-width:1100px){
+ .hero-content.hero-home-layout{grid-template-columns:clamp(170px,24vw,230px) minmax(0,1fr);gap:18px;padding:20px 5vw}
+ .hero-home-layout .hero-mark{width:clamp(170px,24vw,230px);height:clamp(170px,24vw,230px)}
+ .hero-home-copy h1{font-size:clamp(62px,8vw,92px);margin:12px 0 16px}
+ .hero-home-copy .hero-bottom>p{font-size:clamp(18px,2.4vw,25px)}
+ .hero-home-copy .hero-shop{min-width:180px;padding:13px 14px;gap:12px}
+}
