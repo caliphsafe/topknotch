@@ -93,7 +93,7 @@
  .hero-topline{padding:10px 5vw;font-size:7px;letter-spacing:.1em}
  .hero-topline>span:last-child{max-width:150px;text-align:right}
  .hero-stage{height:auto;min-height:580px;display:grid}
- .hero-ring{object-position:71% center}
+ .hero-ring{object-position:right center}
  .hero-shade{background:linear-gradient(90deg,rgba(10,9,8,.45),rgba(10,9,8,.16)),linear-gradient(0deg,rgba(10,9,8,.86),transparent 65%)}
  .hero-content{padding:28px 5vw 30px;min-height:580px}
  .hero-kicker{display:block;font-size:8px;max-width:82%}
