@@ -334,9 +334,11 @@
 @media(max-width:700px){.article-lead{grid-template-columns:1fr;gap:28px;padding:32px 4vw}.article-mark{min-height:360px;padding:28px 16px 48px}.article-mark-logo{width:min(92%,360px)}.article-intro h2{font-size:clamp(38px,11vw,50px)}.category-spread{grid-template-columns:1fr}.glove-study{aspect-ratio:4/3;min-height:0}.glove-study>img{max-width:none;width:100%;height:100%;object-fit:cover;object-position:center 45%;transform:none}.glove-study .eyebrow{left:18px;bottom:16px}}
 
 .glove-study>img{filter:brightness(.78) saturate(.78)}
-
-/* Place the two-line brand label in the upper-left corner of the homepage hero. */
-.hero-content.hero-home-layout{position:relative}
-.hero-home-layout .hero-home-kicker{position:absolute;top:24px;left:6vw;z-index:2;display:block;font-size:9px;line-height:1.45;letter-spacing:.15em;font-weight:600}
-.hero-home-layout .hero-home-kicker small{display:block;margin-top:4px;font-size:7px;letter-spacing:.13em;font-weight:400}
-@media(max-width:760px){.hero-content.hero-home-layout .hero-home-kicker{top:20px;left:5vw;font-size:7px;line-height:1.35;letter-spacing:.1em}.hero-home-layout .hero-home-kicker small{font-size:6px;line-height:1.4}}
+/* Shared brand descriptor in the red strip on every page. */
+.hero-bar-descriptor::before{content:" / "}
+@media(max-width:760px){
+ .hero-topline,.subpage-hero .subpage-topline{gap:12px}
+ .hero-topline>span:first-child{flex-shrink:0}
+ .hero-bar-descriptor{display:block}
+ .hero-bar-descriptor::before{content:none}
+}
