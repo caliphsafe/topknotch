@@ -387,3 +387,10 @@
  .about-hero>.eyebrow{max-width:48%;line-height:1.5;font-size:7px}
  .about-hero .subpage-shade{background:linear-gradient(90deg,rgba(10,9,8,.86),rgba(10,9,8,.5) 42%,rgba(10,9,8,.12) 70%),linear-gradient(0deg,rgba(10,9,8,.4),transparent 65%)}
 }
+
+/* Desktop Contact hero: blend the portrait into the original ring photograph. */
+@media(min-width:761px){
+ .contact-hero::before{content:"";position:absolute;z-index:-3;top:var(--hero-bar-height);left:0;right:0;height:var(--hero-stage-height);background:url("/assets/contact-hero.png") center 65%/cover no-repeat;filter:brightness(.72) saturate(.65);pointer-events:none}
+ .contact-hero .subpage-ring{-webkit-mask-image:linear-gradient(90deg,transparent 0%,rgba(0,0,0,.15) 12%,rgba(0,0,0,.7) 28%,#000 44%);mask-image:linear-gradient(90deg,transparent 0%,rgba(0,0,0,.15) 12%,rgba(0,0,0,.7) 28%,#000 44%)}
+ .contact-hero .subpage-shade{background:linear-gradient(90deg,rgba(10,9,8,.58),rgba(10,9,8,.36) 46%,rgba(10,9,8,.18) 76%),linear-gradient(0deg,rgba(10,9,8,.4),transparent 70%)}
+}
