@@ -342,3 +342,10 @@
  .hero-bar-descriptor{display:block}
  .hero-bar-descriptor::before{content:none}
 }
+
+/* Homepage text-only shop invitation. */
+.hero-home-copy .hero-shop-link{display:inline-flex;align-items:center;align-self:flex-start;gap:12px;min-height:44px;padding:8px 0;color:#fff;background:none;border:0;text-decoration:none;font-size:12px;font-weight:600;letter-spacing:.12em;white-space:nowrap}
+.hero-home-copy .hero-shop-link:hover{color:#fff;text-decoration:none}
+.hero-home-copy .hero-shop-link:focus-visible{outline:2px solid #fff;outline-offset:5px}
+.hero-shop-link .boxing-glove-icon{width:30px;height:24px;object-fit:contain;filter:none}
+@media(max-width:760px){.hero-home-copy .hero-shop-link{font-size:11px}}
